@@ -1,36 +1,15 @@
-# Velocity
+![enter image description here](https://i.imgur.com/9bKOVy1.png)
+# OrangeJuice
 
-[![Build Status](https://img.shields.io/jenkins/s/https/ci.velocitypowered.com/job/velocity.svg)](https://ci.velocitypowered.com/job/velocity-3.0.0/)
-[![Join our Discord](https://img.shields.io/discord/289587909051416579.svg?logo=discord&label=)](https://discord.gg/papermc)
-
-A Minecraft server proxy with unparalleled server support, scalability,
-and flexibility.
-
-Velocity is licensed under the GPLv3 license.
+A custom fork of Minecraft proxy Velocity which is aimed to aid playes' with poor connections.
 
 ## Goals
+ - Re-route connections of players who have high latency values using configurable proxies,
+ - Compress packets even more before sending them to the client,
+ - Geolocation based proxy routing to further reduce ping of foreign players,
+ - Reduce the network usage of AFK players.
 
-* A codebase that is easy to dive into and consistently follows best practices
-  for Java projects as much as reasonably possible.
-* High performance: handle thousands of players on one proxy.
-* A new, refreshing API built from the ground up to be flexible and powerful
-  whilst avoiding design mistakes and suboptimal designs from other proxies.
-* First-class support for Paper, Sponge, and Forge. (Other implementations
-  may work, but we make every endeavor to support these server implementations
-  specifically.)
-  
-## Building
+Currently used exclusively on 2 Turkish Networks with minimal results as most of our features are yet to be implemented.
+Requires heavy configuration and a little bit more CPU power when compared to vanilla Velocity.
 
-Velocity is built with [Gradle](https://gradle.org). We recommend using the
-wrapper script (`./gradlew`) as our CI builds using it.
-
-It is sufficient to run `./gradlew build` to run the full build cycle.
-
-## Running
-
-Once you've built Velocity, you can copy and run the `-all` JAR from
-`proxy/build/libs`. Velocity will generate a default configuration file
-and you can configure it from there.
-
-Alternatively, you can get the proxy JAR from the [downloads](https://papermc.io/downloads#Velocity)
-page.
+[Velocity on GitHub.](https://github.com/PaperMC/Velocity)
